@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: auto;
+    height: 100%;
+    margin: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.red-container {
+    background: red;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 5rem;
+    order: 1;
+}
+
+.orange-container {
+  background: #ff8105;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 14rem;
+  order: 2;
+}
+
+.yellow {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 65%;
+  height: 20rem;
+  order: 3;
+}
+
+.yellow-container {
+  background: #fec637;
+  width: 48%;
+  height: 9rem;
+  margin-right: 10px;
+}
+
+.green-container {
+  width: 35%;
+  background: #7fa00e;
+  height: 12rem;
+  order: 4;
+}
+
+.pink-container{
+  width: 64%;
+  margin-right: 5px;
+  background: #fe9cb5;
+  height: 20rem;
+  order: 6;
+}
+
+.blue-container {
+  width: 35%;
+  background: #53c0cc;
+  height: 20rem;
+  position: relative;
+  top: -118px;
+  order: 7;
+}
+
+@media only screen and (max-width: 767px) {
+.red-container {
+    background: red;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 5rem;
+    order: 1;
+}
+
+.yellow {
+  background: #fec637;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 10px;
+  order: 2;
+}
+
+.yellow-container:not(.first-yellow){
+  display: none;
+}
+
+.orange-container {
+  background: #ff8105;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 10px;
+  order: 3;
+}
+
+.green-container {
+  background: #7fa00e;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 10px;
+  order: 4;
+}
+
+
+.pink-container {
+  background: #fe9cb5;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 10px;
+  order: 5;
+}
+
+
+.blue-container {
+  background: #53c0cc;
+  width: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 10rem;
+  margin-bottom: 10px;
+  order: 6;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .orange-container {
+        width: 70%;
+        margin-right: 10px;
+    }
+
+    .yellow {
+      background: #fec637;
+      width: 100%;
+      height: 10rem;
+      margin-bottom: 10px;
+      order: 4;
+    }
+
+    .yellow-container:not(.first-yellow){
+      display: none;
+    }
+
+    .green-container {
+        width: 28%;
+        order: 3;
+        height: 14rem;
+    }
+
+    .pink-container {
+        order: 5;
+        width: 100%;
+        background-color: pink;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .blue-container {
+        width: 100%;
+        top: 5px;
+        left: 0px;
+        margin: 0px;
+    }
+}
