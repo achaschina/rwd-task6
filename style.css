@@ -46,11 +46,15 @@ body {
 }
 
 .yellow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fec637;
   width: 48%;
   height: 9rem;
   margin-right: 10px;
 }
+
 
 .green-container {
   width: 35%;
